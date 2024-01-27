@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather_web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search">
+                <input type="text" placeholder="Enter location">
+                <button class="fa-solid fa-magnifying-glass" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="loc_not_found">
+            <h1>Sorry,Location not found</h1>
+            <img src="error.jpg" alt="error" srcset="">
+        </div>
+
+        <div class="weather-body">
+            <img src="cloudy.jpg" alt="Weather image" class="weather-img">
+            <div class="weather-box">
+                <p class="temp"><b>0</b><sup>°C</sup></p>
+                <p class="description">Mild chances of rain</p>
+            </div>
+
+            <div class="details">
+                <div class="humidity">
+                    <i class=" fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity"><b>45%</b></span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="windspeed">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="windspeed"><b>12 km/hr</b></span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+                <div class="pressure">
+                    <i class="fa-solid fa-gauge"></i>
+                    <div class="text">
+                        <span id="pressure"><b>12 atm</b></span>
+                        <p>Pressure</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/e4849a58a5.js" crossorigin="anonymous"></script>
+</body>
+</html>
